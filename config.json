@@ -1,0 +1,69 @@
+{
+    "repo_owner": "GitCTF-Test",
+    "intended_pts": "10",
+    "unintended_pts": "60",
+    "round_frequency": "600",
+    "start_time": "2022-07-01T00:00:00+05:00",
+    "end_time": "2022-08-01T23:59:00+05:00",
+    "exploit_timeout": {
+        "injection_phase": "15",
+        "exercise_phase": "60"
+    },
+    "template_path": "/usr/local/share/gitctf",
+    "instructor": "AlexOConnorHub",
+    "problems": {
+        "problem-1": {
+            "base_image": "ubuntu:latest",
+            "sed_cmd": "",
+            "service_exe_type": "stand-alone",
+            "number_of_bugs": "1",
+            "description": "service repositoy",
+            "bin_src_path": "/usr/local/share/vuln64",
+            "bin_dst_path": "/service/vuln",
+            "flag_dst_path": "/var/ctf/flag",
+            "bin_args": "--debug",
+            "port": "2000",
+            "required_packages": "nmap"
+        }
+    },
+    "teams": {
+        "instructor": {
+            "repo_name": "-",
+            "slug": "-",
+            "pub_key_id": "PLEASE_SUBMIT_PULL_REQUEST"
+        },
+        "team-1": {
+            "pub_key_id": "PLEASE_SUBMIT_PULL_REQUEST",
+            "slug": "team-1",
+            "problem-1": {
+                "repo_name": "team-1-problem-1",
+                "bug-1": "HASH_TO_BE_DETERMINED"
+            }
+        },
+        "team-2": {
+            "pub_key_id": "PLEASE_SUBMIT_PULL_REQUEST",
+            "slug": "team-2",
+            "problem-1": {
+                "repo_name": "team-2-problem-1",
+                "bug-1": "HASH_TO_BE_DETERMINED"
+            }
+        }
+    },
+    "individuals": {
+        "AlexOConnorHub": {
+            "team": "instructor",
+            "id": 43659595,
+            "pub_key_id": "PLEASE_SUBMIT_PULL_REQUEST"
+        },
+        "AlexOConnorHu": {
+            "team": "team-1",
+            "id": null,
+            "pub_key_id": "PLEASE_SUBMIT_PULL_REQUEST"
+        },
+        "AlexOConnorHubs": {
+            "team": "team-2",
+            "id": null,
+            "pub_key_id": "PLEASE_SUBMIT_PULL_REQUEST"
+        }
+    }
+}
